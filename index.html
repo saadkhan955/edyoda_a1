@@ -5,10 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Favorite Foods WebApp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <style>
+      html,
       body {
+        height: 100%;
+        width: 100%;
+      }
+      html,
+      body,
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      blockquote {
         padding: 0;
         margin: 0;
+        font-family: "Roboto";
       }
       nav ul {
         list-style-type: none;
@@ -32,6 +53,27 @@
       header li a:hover {
         background-color: #111;
       }
+
+      .banner {
+        background: rgb(238, 174, 202);
+        background: radial-gradient(
+          circle,
+          rgba(238, 174, 202, 1) 0%,
+          rgba(148, 187, 233, 1) 100%
+        );
+        height: 100%;
+        min-height: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+
+      .banner blockquote {
+        text-align: center;
+        font-size: 24px;
+        color: azure;
+        padding: 100px;
+      }
     </style>
   </head>
   <body>
@@ -46,8 +88,40 @@
     </header>
     <div class="main">
       <div class="content">
-        <section id="home"></section>
-        <section id="menu"></section>
+        <section id="home">
+          <div class="banner">
+            <div>
+              <blockquote
+                cite="https://www.sophisticatedgourmet.com/wp-content/uploads/2016/11/food-quote-cesar-chavez.webp"
+              >
+                <p>
+                  "If you really want to make a friend, go to someone’s house
+                  and eat with him… <br />
+                  The people who give you their food give you their heart."
+                </p>
+                <br />
+                <cite>- Cesar Chavez</cite>
+              </blockquote>
+            </div>
+          </div>
+        </section>
+        <section id="menu">
+          <div>
+            <h2>Top 5 Favorite Foods</h2>
+            <ul>
+              <li>
+                <a href="#food1">Fried egg with guacamole sandwiches</a>
+              </li>
+              <li><a href="#food2">Pizza with pineapple and thin crust</a></li>
+              <li><a href="#food3">Raspberry donut</a></li>
+              <li><a href="#food4">Carrot cake with fresh fruits</a></li>
+              <li>
+                <a href="#food5">Pumpkin soup with pumpkin seeds on top</a>
+              </li>
+              <li><a href="#food6">Tuna poke with fresh vegetables</a></li>
+            </ul>
+          </div>
+        </section>
         <section id="pricing"></section>
       </div>
     </div>
