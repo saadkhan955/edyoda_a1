@@ -11,70 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <style>
-      html,
-      body {
-        height: 100%;
-        width: 100%;
-      }
-      html,
-      body,
-      p,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      blockquote {
-        padding: 0;
-        margin: 0;
-        font-family: "Roboto";
-      }
-      nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-      }
-      nav li {
-        float: left;
-      }
-
-      header li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-
-      header li a:hover {
-        background-color: #111;
-      }
-
-      .banner {
-        background: rgb(238, 174, 202);
-        background: radial-gradient(
-          circle,
-          rgba(238, 174, 202, 1) 0%,
-          rgba(148, 187, 233, 1) 100%
-        );
-        height: 100%;
-        min-height: 100%;
-        box-sizing: border-box;
-        overflow-x: hidden;
-        overflow-y: hidden;
-      }
-
-      .banner blockquote {
-        text-align: center;
-        font-size: 24px;
-        color: azure;
-        padding: 100px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -108,89 +45,141 @@
         <section id="menu">
           <div>
             <h2>Top 5 Favorite Foods</h2>
-            <ul>
+            <ul class="menu-items">
               <li>
-                <a href="#food1">Fried egg</a>
+                <a href="#biryani" title="Click here to go to Biryani"
+                  >Biryani</a
+                >
               </li>
-              <li><a href="#food2">Pizza</a></li>
-              <li><a href="#food3">Donut</a></li>
-              <li><a href="#food4">Carrot cake</a></li>
               <li>
-                <a href="#food5">Pumpkin soup</a>
+                <a
+                  href="#butter-chicken"
+                  title="Click here to go to Butter Chicken"
+                  >Butter Chicken</a
+                >
               </li>
-              <li><a href="#food6">Tuna poke</a></li>
+              <li><a href="#idli" title="Click here to go to Idli">Idli</a></li>
+              <li>
+                <a href="#pav-bhaji" title="Click here to go to Pav Bhaji"
+                  >Pav Bhaji</a
+                >
+              </li>
+              <li>
+                <a href="#pizza" title="Click here to go to Pizza">Pizza</a>
+              </li>
+              <li>
+                <a href="#samosa" title="Click here to go to Samosa">Samosa</a>
+              </li>
             </ul>
           </div>
         </section>
         <section id="menu-item">
           <div>
             <div>
-              <figure id="food1">
+              <figure id="biryani">
+                <figcaption>
+                  <a
+                    href="#biryani-price"
+                    title="Click here to view Biryani price"
+                    >Biryani</a
+                  >
+                </figcaption>
                 <img
-                  width="50%"
+                  width="100%"
                   height="auto"
-                  src="img/fried-egg-with-guacamole-sandwiches.jpg"
-                  alt="Fried"
+                  src="img/biryani.jpg"
+                  alt="Biryani"
                 />
-                <figcaption>Fried egg</figcaption>
               </figure>
             </div>
             <div>
-              <figure id="food2">
+              <figure id="butter-chicken">
+                <figcaption>
+                  <a
+                    href="#butter-chicken-price"
+                    title="Click here to view Butter chicken Price"
+                    >Butter Chicken</a
+                  >
+                </figcaption>
                 <img
-                  width="50%"
+                  width="100%"
                   height="auto"
-                  src="img/pizza-with-pineapple-and-thin-crust.jpg"
+                  src="img/butter-chicken.jpg"
+                  alt="Butter Chicken"
+                />
+              </figure>
+            </div>
+            <div>
+              <figure id="idli">
+                <figcaption>
+                  <a href="#idli-price" title="Click here to view Idli price"
+                    >Idli</a
+                  >
+                </figcaption>
+                <img width="100%" height="auto" src="img/idli.jpg" alt="Idli" />
+              </figure>
+            </div>
+            <div>
+              <figure id="pav-bhaji">
+                <figcaption>
+                  <a
+                    href="#Pav Bhaji"
+                    title="Click here to view Pav Bhaji price"
+                    >Pav Bhaji</a
+                  >
+                </figcaption>
+                <img
+                  width="100%"
+                  height="auto"
+                  src="img/pav-bhaji.jpg"
+                  alt="Pav Bhaji"
+                />
+              </figure>
+            </div>
+            <div>
+              <figure id="pizza">
+                <figcaption>
+                  <a href="#pizza-price" title="Click here to view Pizza price"
+                    >Pizza</a
+                  >
+                </figcaption>
+                <img
+                  width="100%"
+                  height="auto"
+                  src="img/pizza.jpg"
                   alt="Pizza"
                 />
-                <figcaption>Pizza</figcaption>
               </figure>
             </div>
             <div>
-              <figure id="food3">
+              <figure id="samosa">
+                <figcaption>
+                  <a
+                    href="#samosa-price"
+                    title="Click here to view Samosa price"
+                    >Samosa</a
+                  >
+                </figcaption>
                 <img
-                  width="50%"
+                  width="100%"
                   height="auto"
-                  src="img/raspberry-donut-close-up.jpg"
-                  alt="Donut"
+                  src="img/samosa.jpg"
+                  alt="Samosa"
                 />
-                <figcaption>Donut</figcaption>
-              </figure>
-            </div>
-            <div>
-              <figure id="food4">
-                <img
-                  width="30%"
-                  height="auto"
-                  src="img/carrot-cake-with-fresh-fruits.jpg"
-                  alt="Carrot cake"
-                />
-                <figcaption>Carrot cake</figcaption>
-              </figure>
-            </div>
-            <div>
-              <figure id="food5">
-                <img
-                  width="50%"
-                  height="auto"
-                  src="img/pumpkin-soup-with-pumpkin-seeds-on-top.jpg"
-                  alt="Pumpkin soup"
-                />
-                <figcaption>Pumpkin soup</figcaption>
-              </figure>
-            </div>
-            <div>
-              <figure id="food6">
-                <img
-                  width="50%"
-                  height="auto"
-                  src="img/tuna-poke-with-fresh-vegetables.jpg"
-                  alt="Tuna poke"
-                />
-                <figcaption>Tuna poke</figcaption>
               </figure>
             </div>
           </div>
+        </section>
+        <section id="pricing">
+          <h2>Price List</h2>
+          <ol>
+            <li id="biryani-price">Biryani - &#8377; 250</li>
+            <li id="butter-chicken-price">Butter Chicken - &#8377; 300</li>
+            <li id="idli-price">Idli - &#8377; 50</li>
+            <li id="pav-bhaji-price">Pav Bhaji - &#8377; 80</li>
+            <li id="pizza-price">Pizza - &#8377; 150</li>
+            <li id="samosa-price">Samosa - &#8377; 20</li>
+          </ol>
         </section>
       </div>
     </div>
